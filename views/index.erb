@@ -1,13 +1,8 @@
 
 <% if @name %>
-<h1>My name is <%= @name %> <%=@surname %></h1>
-
+  <h1>My name is <%= @name %> <%=@surname %></h1>
 <% end %>
+
 <div style='border: 2px dashed red'>
-<img src='http://bit.ly/1eze8aE'/>
+  <img src='http://bit.ly/1eze8aE'/>
 </div>
-<form action="/named-cat">
-<input type="text" name="name">
-<input type="text" name="surname">
-<input type="submit" name="Submit Names">
-</form>
