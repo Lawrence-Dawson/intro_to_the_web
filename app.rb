@@ -18,7 +18,14 @@ get '/age' do
   "im 22!"
 end
 
-get '/cat' do
-  @cat_name = ["Amigo", "Oscar", "Viking"].sample 
+get '/named-cat' do
+  p params
+  @name = params[:name]
+  @surname = params[:surname]
+  erb(:index)
+end
+
+get '/random-cat' do
+  @name = ["Amigo", "Oscar", "Viking"].sample
   erb(:index)
 end
