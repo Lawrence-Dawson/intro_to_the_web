@@ -19,5 +19,6 @@ get '/age' do
 end
 
 get '/cat' do
+  @cat_name = ["Amigo", "Oscar", "Viking"].sample 
   erb(:index)
 end
